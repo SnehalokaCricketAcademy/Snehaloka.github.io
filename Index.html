@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Snehaloka Cricket Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: url('photos/bg1.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      text-shadow: 1px 1px 4px black;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+      text-shadow: 1px 1px 2px black;
+    }
+    header a {
+      background: #ff6600;
+      padding: 12px 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    header a:hover {
+      background: #cc5200;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+    }
+    .about-container img {
+      width: 40%;
+      border-radius: 10px;
+    }
+    .about-container div {
+      flex: 1;
+    }
+    .programs ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: center;
+    }
+    .programs li {
+      margin: 10px 0;
+      font-weight: 500;
+    }
+    .why-choose {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .why-choose div {
+      flex: 1 1 45%;
+      margin: 10px;
+      padding: 20px;
+      background: #f5f5f5;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .testimonials {
+      background: #f0f0f0;
+      padding: 40px;
+      border-radius: 10px;
+    }
+    .testimonials p {
+      margin: 10px 0;
+      font-style: italic;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #0077cc;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #005fa3;
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .about-container {
+        flex-direction: column;
+      }
+      .about-container img {
+        width: 100%;
+      }
+      .why-choose div {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Snehaloka Cricket Academy</h1>
+    <p>Nurturing Tomorrow’s Champions Today</p>
+    <a href="#join">Join Us Now</a>
+  </header>
+
+  <section class="about">
+    <div class="about-container">
+      <img src="photos/bg2.jpg" alt="About Snehaloka">
+      <div>
+        <h2>About Us</h2>
+        <p>Snehaloka Cricket Academy is a premier training ground for young cricket talent in [Your City/State]. With certified coaches, advanced facilities, and a legacy of success, we shape dreams into reality.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="programs">
+    <h2>Our Programs</h2>
+    <ul>
+      <li>Beginners (Age 7–12)</li>
+      <li>Intermediate (Age 13–17)</li>
+      <li>Advanced / State Level</li>
+      <li>One-on-One Coaching</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why Choose Us?</h2>
+    <div class="why-choose">
+      <div>Certified & Experienced Coaches</div>
+      <div>Weekly Match Practice</div>
+      <div>Fitness & Nutrition Support</div>
+      <div>State-Level Exposure</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="photos/action1.jpg" alt="Action">
+      <img src="photos/team1.jpg" alt="Team">
+      <img src="photos/kids1.jpg" alt="Kids Practice">
+      <img src="photos/coach1.jpg" alt="Coaching">
+      <img src="photos/nets1.jpg" alt="Nets Session">
+      <img src="photos/match1.jpg" alt="Match">
+      <img src="photos/awards1.jpg" alt="Awards">
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>Testimonials</h2>
+    <p>"The academy transformed my son’s game and confidence!" — Parent of a State Player</p>
+    <p>"Thanks to Snehaloka, I made it to the U-17 squad!" — Young Player</p>
+  </section>
+
+  <section id="join">
+    <h2>Join Snehaloka Today</h2>
+    <form action="https://formsubmit.co/snehalokacricketacademy@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="number" name="age" placeholder="Your Age" required>
+      <input type="text" name="contact" placeholder="Parent Contact Number" required>
+      <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact Us: Kannuralli RD, Hoskote, Bengaluru 562114 | Phone: 8553366105,9738897566 | Email: snehalokacricketacademy@gmail.com</p>
+    <p>Follow us on Instagram & Facebook</p>
+    <p>&copy; 2025 Snehaloka Cricket Academy</p>
+  </footer>
+
+</body>
+</html>
